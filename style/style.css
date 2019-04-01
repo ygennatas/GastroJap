@@ -1,0 +1,179 @@
+html {
+	font-size:100%;
+	min-height:100%;
+	background:url("img/380.png") 0 0 repeat-y #fff;
+}
+
+body {
+	font:1em Arial, sans-serif;
+	line-height:1.25;
+	color:#333;
+	background:transparent;
+	margin:0;
+	padding:0;
+}
+
+#div1{
+    background:blue;
+}
+
+#div2{
+    background:yellow;
+}
+
+#div3{
+    background:red;
+}
+
+/*
+	elements
+*/
+
+
+a,a:link {
+	color:#447BC4;
+	text-decoration:underline;
+	font-weight:inherit;
+}
+
+a:hover {
+	color:#DD4B39;
+	text-decoration:underline;
+}
+
+a:visited {
+	color:#447BC4;
+}
+
+a:active,a:hover,a.active,.active a {
+	color:#DD4B39;
+}
+
+a img {
+	border:none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin:1em 0 0.5em;
+}
+
+h1 {
+	color:#DD4B39;
+	font-size:1.5em;
+	font-weight:700;
+	margin:0;
+	padding:0.5em 0;
+}
+
+h2 {
+	color:#6E9107;
+	font-size:1.2em;
+	font-weight:700;
+}
+
+h4 {
+	font-size:1em;
+	font-weight:700;
+}
+
+ul,ol {
+	margin:.5em 0 .5em 1em;
+	padding:0;
+}
+
+ul {
+	list-style:square;
+}
+
+li {
+	list-style:square;
+	margin:0 0 0 20px;
+	padding:0.25em 0 0.25em 5px;
+}
+
+p,li p {
+	margin:.5em 0;
+}
+
+em  {
+	font-style:italic;
+}
+
+strong {
+	font-weight:700;
+}
+
+input[type=button],input[type=submit] {
+	cursor:pointer;
+}
+
+code,pre {
+	font-size:95%;
+	font-family:'Liberation Mono', FreeMono, 'Courier New', Courier, Monospace;
+}
+
+/*
+	header
+*/
+
+#header {
+	font-size:16px;
+	background-color:#555;
+	border-bottom:2px solid #222;
+	box-shadow:2px 2px 1px rgba(0, 0, 0, 0.3) inset, 1px 1px 3px rgba(0, 0, 0, 0.3), -2px 0 1px rgba(0, 0, 0, 0.3) inset, 0 -16px 16px rgba(0, 0, 0, 0.2) inset;
+	letter-spacing:1px;
+	line-height:1em;
+	overflow:hidden;
+	height:32px;
+	margin:0;
+	padding:0;
+}
+
+#header ul {
+	list-style:none outside none;
+	margin:0;
+	padding:0;
+}
+
+#header ul li {
+	list-style:none;
+	float:left;
+	color:#FFF;
+	text-decoration:none;
+	text-shadow:-1px -1px 0 #222;
+	margin:0;
+	padding:0.5em 0.1em 0.5em 0.7em;
+}
+
+#header ul#header-breadcrumb {
+	float:left;
+}
+
+#header a {
+	color:#FFF;
+	text-decoration:none;
+	text-shadow:-1px -1px 0 #222;
+}
+
+#header a:hover {
+	text-decoration:underline;
+}
+
+div#nav {
+	height:16px;
+	padding:8px 0;
+}
+
+#header ul#header-extra {
+	float:right;
+	padding-right:1em;
+}
+
+#header ul#header-extra a {
+	display:inline-block;
+	opacity:0.8;
+}
+
+#header ul#header-extra a:hover {
+	opacity:1;
+}
