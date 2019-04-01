@@ -9,7 +9,7 @@ p{
 }
 
 header{
-	background: rgb(5, 109, 32);
+	background-color: #155E48;
 	position: fixed;
 	top: 1%;
 	left: 1%;
@@ -18,16 +18,8 @@ header{
 	display: flex;
 }
 
-#icon{
-	
-}
-
-#titleP{
-
-}
-
 footer{
-	background: rgb(0, 78, 21);
+	background-color: #155E48;
 	position: fixed;
 	bottom: 1%;
 	left: 1%;
@@ -70,7 +62,7 @@ footer{
 
 /*first page*/
 #div11FR{
-	background: rgb(146, 23, 7);
+	background-color: #831E34;
 	text-align: center;
 	order: 1;
 	flex-grow: 1;
@@ -79,7 +71,7 @@ footer{
 }
 #div11EN{
 	display: none;
-	background: rgb(146, 23, 7);
+	background-color: #831E34;
 	text-align: center;
 	order: 1;
 	flex-grow: 1;
@@ -88,7 +80,7 @@ footer{
 }
 #div11DE{
 	display: none;
-	background: rgb(146, 23, 7);
+	background-color: #831E34;
 	text-align: center;
 	order: 1;
 	flex-grow: 1;
@@ -97,7 +89,12 @@ footer{
 }
 
 #div12{
-	background: rgb(146, 76, 7);
+	background-image: url('img/jap.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #8E4620;
+	size: cover;
 	text-align: center;
 	order: 2;
 	flex-grow: 3;
@@ -107,7 +104,7 @@ footer{
 
 #div13{
 	display: none;
-	background: rgb(7, 74, 90);
+	background-color: #3D7C1C;
 	text-align: center;
 	position: fixed;
 	top: 10%;
@@ -118,7 +115,7 @@ footer{
 
 /*second page*/
 #div21FR{
-	background: rgb(146, 23, 7);
+	background-color: #831E34;
 	text-align: center;
 	order: 1;
 	flex-grow: 1;
@@ -127,7 +124,7 @@ footer{
 }
 #div21EN{
 	display: none;
-	background: rgb(146, 23, 7);
+	background-color: #831E34;
 	text-align: center;
 	order: 1;
 	flex-grow: 1;
@@ -136,7 +133,7 @@ footer{
 }
 #div21DE{
 	display: none;
-	background: rgb(146, 23, 7);
+	background-color: #831E34;
 	text-align: center;
 	order: 1;
 	flex-grow: 1;
@@ -145,7 +142,7 @@ footer{
 }
 
 #div22FR{
-	background: rgb(146, 76, 7);
+	background: #8E4620;
 	text-align: center;
 	order: 1;
 	flex-grow: 1;
@@ -154,7 +151,7 @@ footer{
 }
 #div22EN{
 	display: none;
-	background: rgb(146, 76, 7);
+	background: #8E4620;
 	text-align: center;
 	order: 1;
 	flex-grow: 1;
@@ -163,7 +160,7 @@ footer{
 }
 #div22DE{
 	display: none;
-	background: rgb(146, 76, 7);
+	background: #8E4620;
 	text-align: center;
 	order: 1;
 	flex-grow: 1;
