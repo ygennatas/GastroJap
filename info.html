@@ -4,42 +4,62 @@
 	<head>
         <meta name="viewport" content="text/html; charset=utf-8">
         
-        <script type="text/javascript" src="script/___.js"></script>
 	    <link rel="stylesheet" type="text/css" href="style/style.css" media="screen" />
 	    <script type="text/javascript" src="script/script.js"></script>
         
-		<title>La Gastronomie Japonaise</title>
+        <title>Japanese Gastronomy</title>
 	</head>
 
 	<body>
 
 			<header>
-				<img id="icone" src="img/icon.png" alt="icone du site"> 
-				<h1 id="titreP">La Gastronomie Japonaise</h1>
+                <a href="index.html"><img id="icon" src="style/img/icon.png" alt="site's icon"></a>
+                <a href="index.html"><h1 id="titleP">Japanese Gastronomy</h1></a>
 			</header>
 
-			<div id="div1">
-                <h2>Presentation WebDoc</h2>
-                <p>Texte...</p>
-            </div>
+			<div class="flex-container">
+                <div id="div21FR">
+                    <a href="index.html"><img id="icon" src="style/img/back.png" alt="arrow to go back to the map"></a>
+                    <h2>Ville</h2>
+                    <p>Liste des plats...</p>
+                </div>
 
-            <div id="div2">
-                <h2>Plat 1</h2>
-                <p>Desc</p>
-            </div>
+                <div id="div21EN">
+                    <a href="index.html"><img id="icon" src="style/img/back.png" alt="arrow to go back to the map"></a>
+                    <h2>City</h2>
+                    <p>Dishes' list...</p>
+                </div>
 
-            <div id="div3">
-                <h2>Plat 1</h2>
-                <p>Desc</p>
-            </div>
+                <div id="div21DE">
+                    <a href="index.html"><img id="icon" src="style/img/back.png" alt="arrow to go back to the map"></a>
+                    <h2>Stadt</h2>
+                    <p>List mit die Gänge...</p>
+                </div>
 
-            ...
+                <div id="div22FR">
+                    <p>Liste des plats...</p>
+                </div>
+
+                <div id="div22EN">
+                    <p>Dishes' list...</p>
+                </div>
+
+                <div id="div22DE">
+                    <p>List mit die Gänge...</p>
+                </div>
+            </div>
 
 			<footer>
                 <p>Copyright</p>
-                <p>Créé par...</p>
-                <p>Contact</p>
-                <p>FR</p> <p>EN</p> <p>DE</p>
+                <p id="creFR">Créé par...</p>
+                <p id="creEN">Created by...</p>
+                <p id="creDE">Erstellt von...</p>
+                <p id="conFR">Contact</p>
+                <p id="conEN">Contact</p>
+                <p id="conDE">Kontakt</p>
+                <button onclick="showFR2()">FR</button>
+                <button onclick="showEN2()">EN</button>
+                <button onclick="showDE2()">DE</button>
 			</footer>
         
 	</body>

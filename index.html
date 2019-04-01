@@ -4,38 +4,58 @@
 	<head>
         <meta name="viewport" content="text/html; charset=utf-8">
         
-        <script type="text/javascript" src="script/___.js"></script>
 	    <link rel="stylesheet" type="text/css" href="style/style.css" media="screen" />
 	    <script type="text/javascript" src="script/script.js"></script>
         
-		<title>La Gastronomie Japonaise</title>
+        <title>Japanese Gastronomy</title>
 	</head>
 
 	<body>
 
 			<header>
-                <img id="icone" src="img/icon.png" alt="icone du site"> 
-                <h1 id="titreP">La Gastronomie Japonaise</h1>
+                    <a href="index.html"><img id="icon" src="style/img/icon.png" alt="site's icon"></a>
+                    <a href="index.html"><h1 id="titleP">Japanese Gastronomy</h1></a>
 			</header>
 
-			<div id="div1">
-                <h2>Presentation WebDoc</h2>
-                <p>Texte...</p>
-            </div>
+			<div class="flex-container">
+                <div id="div11FR">
+                    <h2>Presentation WebDoc</h2>
+                    <p>Texte...</p>
+                </div>
 
-            <div id="div2">
-                <h2>Carte Interactive</h2>
-            </div>
+                <div id="div11EN">
+                    <h2>WebDoc Presentation</h2>
+                    <p>Text...</p>
+                </div>
 
-            <div id="div3">
+                <div id="div11DE">
+                    <h2>'German Title'</h2>
+                    <p>'German text...'</p>
+                </div>
+
+               <div id="div12">
+                    <p>Map...</p>
+                    <button id="testTabOpen" onclick="showDishes()">TestOpenListTab</button>
+                </div>
+            </div> 
+            
+            <div id="div13">
                 <h2>Liste Plats</h2>
+                <button onclick="hideDishes()"><img id="icon" src="style/img/cross.png" alt="cross to close the list tab"></button>
+                <a href="info.html">SecondPageTest</a>
             </div>
 
 			<footer>
                 <p>Copyright</p>
-                <p>Créé par...</p>
-                <p>Contact</p>
-                <p>FR</p> <p>EN</p> <p>DE</p>
+                <p id="creFR">Créé par...</p>
+                <p id="creEN">Created by...</p>
+                <p id="creDE">Erstellt von...</p>
+                <p id="conFR">Contact</p>
+                <p id="conEN">Contact</p>
+                <p id="conDE">Kontakt</p>
+                <button onclick="showFR1()">FR</button>
+                <button onclick="showEN1()">EN</button>
+                <button onclick="showDE1()">DE</button>
 			</footer>
         
 	</body>
