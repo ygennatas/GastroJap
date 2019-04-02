@@ -75,12 +75,17 @@ function showDE2(){
 }
 
 //show or hide dishes list
-function showDishes(){
-    let x = document.getElementById("div13");
-    x.style.display = "block";
+function showDishes(linkElement){
+    switch(linkElement.id.slice(-2)) {
+    	case '_':
+    		let x = document.getElementById("div13");
+    		x.style.display = "none";
+    		break;
+    	default:
+    		;
+    }
 }
 
-function hideDishes(){
-    let x = document.getElementById("div13");
-    x.style.display = "none";
+function hideDishes(linkElement){
+    linkElement.style.display = "none";
 }
