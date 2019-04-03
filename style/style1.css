@@ -1,0 +1,219 @@
+/*general*/
+body{
+	font-size: 100%;
+	margin: 0px;
+	background-color: #F9E3E3;
+	font-family: Arial;
+}
+h2{
+	margin: 2%;
+	color: white;
+}
+h1{
+	margin: 2%;
+	color: white;
+}
+p{
+	margin: 2%;
+	color: white;
+}
+link{
+	color: white;
+}
+:visited{
+	color: white;
+}
+
+header{
+	background-color: #0D0D0D;
+	position: fixed;
+	top: 1%;
+	left: 1%;
+	width: 98%;
+	height: 8%;
+	display: flex;
+}
+footer{
+	background-color: #0D0D0D;
+	position: fixed;
+	bottom: 1%;
+	left: 1%;
+	width: 98%;
+	height: 8%;
+	text-align: center;
+	display: flex;
+}
+
+/*flex*/
+.flex-container{
+	display: flex;
+	position: fixed;
+	flex-direction: row;
+	top: 10%;
+	left: 1%;
+	height: 80%;
+	width: 98%;
+}
+
+/*first page*/
+/*intro*/
+.intro{
+	background-color: #731C1C;
+	text-align: center;
+	order: 1;
+	flex-grow: 1;
+	flex-basis: 25%;
+	height: 100%;
+}
+
+/*map*/
+#p1d2{
+	background-image: url("img/jap.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	order: 2;
+	flex-grow: 2;
+	flex-basis: 48%;
+	height: 100%;
+}
+.dot{
+	block-size: 2%;
+	top: 65%;
+	left: 60%;
+}
+
+/*lists*/
+.list{
+	background-color: #731C1C;
+	text-align: center;
+	order: 3;
+	flex-grow: 1;
+	flex-basis: 25%;
+	height: 100%;
+}
+
+/*initiate with FR*/
+#p1d1FR{
+	display: block;
+}
+#p1d1EN{
+	display: none;
+}
+#p1d1DE{
+	display: none;
+}
+
+#p1d3natFR{
+	display: block;
+}
+#p1d3natEN{
+	display: none;
+}
+#p1d3natDE{
+	display: none;
+}
+
+#creFR{
+	display: block;
+}
+#creEN{
+	display: none;
+}
+#creDE{
+	display: none;
+}
+
+#conFR{
+	display: block;
+}
+#conEN{
+	display: none;
+}
+#conDE{
+	display: none;
+}
+
+/*initiate with nat list*/
+#p1d3os{
+	display: none;
+}
+#p1d3hi{
+	display: none;
+}
+#p1d3ko{
+	display: none;
+}
+#p1d3ai{
+	display: none;
+}
+#p1d3tm{
+	display: none;
+}
+#p1d3to{
+	display: none;
+}
+#p1d3sh{
+	display: none;
+}
+#p1d3ho{
+	display: none;
+}
+#p1d3na{
+	display: none;
+}
+#p1d3ky{
+	display: none;
+}
+#p1d3ka{
+	display: none;
+}
+
+/*second page*/
+/*first column*/
+.column1{
+	background-color: #731C1C;
+	text-align: center;
+	order: 1;
+	flex-grow: 1;
+	flex-basis: 49%;
+	height: 100%;
+	border-right-width: 2%;
+	border-right-color: #F9E3E3;
+	border-right-style: solid;
+}
+
+/*second column*/
+.column2{
+	background-color: #731C1C;
+	text-align: center;
+	order: 1;
+	flex-grow: 1;
+	flex-basis: 49%;
+	height: 100%;
+	border-left-width: 2%;
+	border-left-color: #F9E3E3;
+	border-right-style: solid;
+}
+
+/*initiating with FR*/
+#p2d1FR{
+	display: block;
+}
+#p2d1EN{
+	display: none;
+}
+#p2d1DE{
+	display: none;
+}
+
+#p2d2FR{
+	display: block;
+}
+#p2d2EN{
+	display: none;
+}
+#p2d2DE{
+	display: none;
+}
