@@ -2,19 +2,20 @@
 <html>
 
 	<head>
-        <meta name="viewport" content="text/html; charset=utf-8">
+        <meta name="viewport" content="text/html" charset="utf-8"/>
         
-	    <link rel="stylesheet" type="text/css" href="style/style1.css" media="screen"/>
-        <script type="text/javascript" src="script/script.js">initiateP1()</script>
+	    <link rel="stylesheet" type="text/css" href="style/style.css" media="screen"/>
+        <script type="text/javascript" src="script/script.js"></script>
+        <script>initiateP1()</script>
         
-        <title>Japanese Gastronomy</title>
+        <title>Jap'Food</title>
 	</head>
 
 	<body>
 
 			<header>
                     <a href="index.html"><img id="siteicon" src="style/img/icon.png" alt="site's icon"></a>
-                    <a href="index.html"><h1 id="titleP">Japanese Gastronomy</h1></a>
+                    <a href="index.html"><h1 id="titleP">Jap'Food</h1></a>
 			</header>
 
 			<div class="flex-container">
@@ -28,14 +29,23 @@
                     <p>Text...</p>
                 </div>
 
-                <div class="intro" id="p1d1DE">
+                <!--<div class="intro" id="p1d1DE">
                     <h2>WebDoc Presentation</h2>
                     <p>Text...</p>
-                </div>
+                </div>-->
 
                 <div id="p1d2">
-                    <img class="dot" id="dot_ky" src="style/img/dot.png" onclick="showDishes(this)" alt="city of _"/>
-                    <button id="testTabOpen" onclick="showDishes(this)">TestOpenListTab</button>
+                    <img class="dot" id="dot_os" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Osaka"/>
+                    <img class="dot" id="dot_hi" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Hiroshima"/>
+                    <img class="dot" id="dot_ko" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Kobr"/>
+                    <img class="dot" id="dot_ai" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Aichi"/>
+                    <img class="dot" id="dot_tm" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Tokyo Metropolis"/>
+                    <img class="dot" id="dot_to" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Tochigi"/>
+                    <img class="dot" id="dot_sh" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Shizuoka"/>
+                    <img class="dot" id="dot_ho" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Hokkaido"/>
+                    <img class="dot" id="dot_na" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Nagasaki"/>
+                    <img class="dot" id="dot_ky" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Kyoto"/>
+                    <img class="dot" id="dot_ka" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Kagawa"/>
                 </div>
 
                 <div class="list" id="p1d3os">
@@ -117,8 +127,7 @@
         
                 <div class="list" id="p1d3natFR">
                     <h2>Plats Nationaux</h2>
-                    <p>Plats...</p>
-                    <a href="#" onclick="javascript:hideDishes(this)"><img id="cross" src="style/img/cross.png" alt="close the list tab"></a>
+                    <p><img id="dish" class="dishes" src="style/img/dish.png" alt="small floating dish icon">Plats...</p>
                     <a href="nat.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
                 </div>
         
@@ -128,24 +137,24 @@
                     <a href="nat.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
                 </div>
         
-                <div class="list" id="p1d3natDE">
+                <!--<div class="list" id="p1d3natDE">
                     <h2>National Gerichte</h2>
                     <p>Gerichte...</p>
                     <a href="nat.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
-                </div>
+                </div>-->
             </div> 
 
 			<footer>
                 <p>Copyright &copy; 2019</p>
                 <p id="creFR">Créé par...</p>
                 <p id="creEN">Created by...</p>
-                <p id="creDE">Erstellt von...</p>
+                <!--<p id="creDE">Erstellt von...</p>-->
                 <p id="conFR">Contact</p>
                 <p id="conEN">Contact</p>
-                <p id="conDE">Kontakt</p>
-                <a href="#" onclick="javascript:translate1(FR)" alt="translate to French">FR</a>
-                <a href="#" onclick="javascript:translate1(EN)" alt="translate to French">EN</a>
-                <a href="#" onclick="javascript:translate1(DE)" alt="translate to French">DE</a>
+                <!--<p id="conDE">Kontakt</p>-->
+                <p id="transFR"><a class="translation" href="#" onclick="translate1('FR')" alt="translate to French">FR</a></p>
+                <p id="transEN"><a class="translation" href="#" onclick="translate1('EN')" alt="translate to English">EN</a></p>
+                <!--<p id="transDE"><a class="translation" href="#" onclick="translate1('DE')" alt="translate to German">DE</a></p>-->
 			</footer>
         
 	</body>

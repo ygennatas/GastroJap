@@ -1,5 +1,9 @@
 /*general*/
+body, html{
+	height: 100%;
+}
 body{
+	position: absolute;
 	font-size: 100%;
 	margin: 0px;
 	background-color: #F9E3E3;
@@ -58,6 +62,7 @@ footer{
 /*first page*/
 /*intro*/
 .intro{
+	position: relative;
 	background-color: #731C1C;
 	text-align: center;
 	order: 1;
@@ -68,6 +73,7 @@ footer{
 
 /*map*/
 #p1d2{
+	position: relative;
 	background-image: url("img/jap.png");
 	background-size: contain;
 	background-position: center;
@@ -80,12 +86,56 @@ footer{
 }
 .dot{
 	block-size: 2%;
-	top: 65%;
+	position: absolute;
+}
+#dot_os{
+	left: 0%;
+	top: 0%;
+}
+#dot_hi{
+	left: 10%;
+	top: 10%;
+}
+#dot_ko{
+	left: 20%;
+	top: 20%;
+}
+#dot_ai{
+	left: 30%;
+	top: 30%;
+}
+#dot_tm{
+	left: 40%;
+	top: 40%;
+}
+#dot_to{
+	left: 50%;
+	top: 50%;
+}
+#dot_sh{
 	left: 60%;
+	top: 60%;
+}
+#dot_ho{
+	left: 70%;
+	top: 70%;
+}
+#dot_na{
+	left: 80%;
+	top: 80%;
+}
+#dot_ky{
+	left: 90%;
+	top: 90%;
+}
+#dot_ka{
+	left: 100%;
+	top: 100%;
 }
 
 /*lists*/
 .list{
+	position: relative;
 	background-color: #731C1C;
 	text-align: center;
 	order: 3;
@@ -93,46 +143,8 @@ footer{
 	flex-basis: 25%;
 	height: 100%;
 }
-
-/*initiate with FR*/
-#p1d1FR{
-	display: block;
-}
-#p1d1EN{
-	display: none;
-}
-#p1d1DE{
-	display: none;
-}
-
-#p1d3natFR{
-	display: block;
-}
-#p1d3natEN{
-	display: none;
-}
-#p1d3natDE{
-	display: none;
-}
-
-#creFR{
-	display: block;
-}
-#creEN{
-	display: none;
-}
-#creDE{
-	display: none;
-}
-
-#conFR{
-	display: block;
-}
-#conEN{
-	display: none;
-}
-#conDE{
-	display: none;
+.dots{
+	float: right;
 }
 
 /*initiate with nat list*/
@@ -171,8 +183,11 @@ footer{
 }
 
 /*second page*/
-/*first column*/
 .column1{
+	overflow-y: scroll;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	position: relative;
 	background-color: #731C1C;
 	text-align: center;
 	order: 1;
@@ -183,9 +198,11 @@ footer{
 	border-right-color: #F9E3E3;
 	border-right-style: solid;
 }
-
-/*second column*/
 .column2{
+	overflow-y: scroll;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	position: relative;
 	background-color: #731C1C;
 	text-align: center;
 	order: 1;
@@ -194,26 +211,29 @@ footer{
 	height: 100%;
 	border-left-width: 2%;
 	border-left-color: #F9E3E3;
-	border-right-style: solid;
+	border-left-style: solid;
+}
+.column1::-webkit-scrollbar{
+	width: 0 !important
+}
+.column2::-webkit-scrollbar{
+	width: 0 !important
 }
 
-/*initiating with FR*/
-#p2d1FR{
-	display: block;
+/*parallax*/
+.parallax1{
+	background-image: url("img/dish1.jpg");
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-#p2d1EN{
-	display: none;
-}
-#p2d1DE{
-	display: none;
-}
-
-#p2d2FR{
-	display: block;
-}
-#p2d2EN{
-	display: none;
-}
-#p2d2DE{
-	display: none;
+.parallax2{
+	background-image: url("img/dish2.jpg");
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }

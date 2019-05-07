@@ -1,14 +1,12 @@
-let l;  //keeps the currently used language
-
 //translate
-let l1 = ["p1d1FR", "p1d1EN", "p1d1DE", "p1d3natFR", "p1d3natEN", "p1d3natDE", "creFR", "creEN", "creDE", "conFR", "conEN", "conDE"];    //id's from page 1
-let l2 = ["p2d1FR", "p2d1EN", "p2d1DE", "p2d2FR", "p2d2EN", "p2d2DE", "creFR", "creEN", "creDE", "conFR", "conEN", "conDE"];    //id's from page 2
+let listDiv1 = ["p1d1FR", "p1d1EN", "p1d3natFR", "p1d3natEN", "creFR", "creEN", "conFR", "conEN"];    //id's from page 1
+let listDiv2 = ["p2d1FR", "p2d1EN", "p2d2FR", "p2d2EN", "creFR", "creEN", "conFR", "conEN"];    //id's from page 2
 
 function translate1(lan){
-    l = lan;
-    for(let i=0; i<l1.length; i++){
-        let y = document.getElementById(l1[i]);
-        if(l1[i].slice(-2) == lan){
+    document.cookie = "language="+lan;
+    for(let i=0; i<listDiv1.length; i++){
+        let y = document.getElementById(listDiv1[i]);
+        if(listDiv1[i].slice(-2) === lan){
             y.style.display = "block";
         }
         else{
@@ -18,10 +16,10 @@ function translate1(lan){
 }
 
 function translate2(lan){
-    l = lan;
-    for(let i=0; i<l2.length; i++){
-        let y = document.getElementById(l2[i]);
-        if(l2[i].slice(-2) == lan){
+    document.cookie = "language="+lan+";";
+    for(let i=0; i<listDiv2.length; i++){
+        let y = document.getElementById(listDiv2[i]);
+        if(listDiv2[i].slice(-2) === lan){
             y.style.display = "block";
         }
         else{
@@ -30,50 +28,34 @@ function translate2(lan){
     }
 }
 
-//initiate page 1
+//initiate with the correct language
 function initiateP1(){
-    if(l == "EN"){
-        translate1(EN);
-    }
-    else if(l == "DE"){
-        translate1(DE);
+    if(document.cookie.valueOf().slice(-2) === "FR"){
+        translate1("FR");
     }
     else{
-        l="FR";
-        translate1(FR);
+        translate1("EN");
     }
 }
 
-//initiate page 2
 function initiateP2(){
-    if(l == "EN"){
-        translate2(EN);
-    }
-    else if(l == "DE"){
-        translate2(DE);
-    }
-    else{
-        l="FR";
-        translate2(FR);
-    }
+    translate2(document.cookie.valueOf().slice(-2));
 }
 
 //show or hide dishes list
 function showDishes(linkElement){
-    if(linkElement.id.slice() == "nat"){
-        let x = document.getElementById("p1d3nat"+l);
-        x.style.display = "block";
+    let all = document.getElementsByClassName("list");
+    for(let i=0; i<all.length; i++){
+        all[i].style.display = "none";
     }
-    else{
-        let n = linkElement.id.slice(-2);
-        let x = document.getElementById("p1d3"+n);
-        x.style.display = "block";
-    }
+    let n = linkElement.id.slice(-2);
+    let x = document.getElementById("p1d3"+n);
+    x.style.display = "block";
 }
 
 function hideDishes(linkElement){
-    let x =
+    let x = linkElement.parentElement;
     x.style.display = "none";
-    let y = getElementById("p1d3nat"+l);
+    let y = document.getElementById("p1d3nat"+document.cookie.valueOf().slice(-2));
     y.style.display = "block";
 }
