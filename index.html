@@ -2,40 +2,159 @@
 <html>
 
 	<head>
-        <meta name="viewport" content="text/html; charset=utf-8">
+        <meta name="viewport" content="text/html" charset="utf-8"/>
         
-        <script type="text/javascript" src="script/___.js"></script>
-	    <link rel="stylesheet" type="text/css" href="style/style.css" media="screen" />
-	    <script type="text/javascript" src="script/script.js"></script>
+	    <link rel="stylesheet" type="text/css" href="style/style.css" media="screen"/>
+        <script type="text/javascript" src="script/script.js"></script>
+        <script>initiateP1()</script>
         
-		<title>La Gastronomie Japonaise</title>
+        <title>Jap'Food</title>
 	</head>
 
 	<body>
 
 			<header>
-                <img id="icone" src="img/icon.png" alt="icone du site"> 
-                <h1 id="titreP">La Gastronomie Japonaise</h1>
+                    <a href="index.html"><img id="siteicon" src="style/img/icon.png" alt="site's icon"></a>
+                    <a href="index.html"><h1 id="titleP">Jap'Food</h1></a>
 			</header>
 
-			<div id="div1">
-                <h2>Presentation WebDoc</h2>
-                <p>Texte...</p>
-            </div>
+			<div class="flex-container">
+                <div class="intro" id="p1d1FR">
+                    <h2>Presentation WebDoc</h2>
+                    <p>Texte...</p>
+                </div>
 
-            <div id="div2">
-                <h2>Carte Interactive</h2>
-            </div>
+                <div class="intro" id="p1d1EN">
+                    <h2>WebDoc Presentation</h2>
+                    <p>Text...</p>
+                </div>
 
-            <div id="div3">
-                <h2>Liste Plats</h2>
-            </div>
+                <!--<div class="intro" id="p1d1DE">
+                    <h2>WebDoc Presentation</h2>
+                    <p>Text...</p>
+                </div>-->
+
+                <div id="p1d2">
+                    <img class="dot" id="dot_os" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Osaka"/>
+                    <img class="dot" id="dot_hi" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Hiroshima"/>
+                    <img class="dot" id="dot_ko" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Kobr"/>
+                    <img class="dot" id="dot_ai" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Aichi"/>
+                    <img class="dot" id="dot_tm" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Tokyo Metropolis"/>
+                    <img class="dot" id="dot_to" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Tochigi"/>
+                    <img class="dot" id="dot_sh" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Shizuoka"/>
+                    <img class="dot" id="dot_ho" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Hokkaido"/>
+                    <img class="dot" id="dot_na" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Nagasaki"/>
+                    <img class="dot" id="dot_ky" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Kyoto"/>
+                    <img class="dot" id="dot_ka" src="style/img/dot.png" onclick="showDishes(this)" alt="city of Kagawa"/>
+                </div>
+
+                <div class="list" id="p1d3os">
+                    <h2>Osaka</h2>
+                    <p>Dishes...</p>
+                    <a href="#" onclick="javascript:hideDishes(this)"><img id="cross" src="style/img/cross.png" alt="close the list tab"></a>
+                    <a href="osaka.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>
+        
+                <div class="list" id="p1d3hi">
+                    <h2>Hiroshima</h2>
+                    <p>Dishes...</p>
+                    <a href="#" onclick="javascript:hideDishes(this)"><img id="cross" src="style/img/cross.png" alt="close the list tab"></a>
+                    <a href="hiroshima.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>
+        
+                <div class="list" id="p1d3ko">
+                    <h2>Kobe</h2>
+                    <p>Dishes...</p>
+                    <a href="#" onclick="javascript:hideDishes(this)"><img id="cross" src="style/img/cross.png" alt="close the list tab"></a>
+                    <a href="kobe.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>
+        
+                <div class="list" id="p1d3ai">
+                    <h2>Aichi</h2>
+                    <p>Dishes...</p>
+                    <a href="#" onclick="javascript:hideDishes(this)"><img id="cross" src="style/img/cross.png" alt="close the list tab"></a>
+                    <a href="aichi.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>
+        
+                <div class="list" id="p1d3tm">
+                    <h2>Tokyo Metropolis</h2>
+                    <p>Dishes...</p>
+                    <a href="#" onclick="javascript:hideDishes(this)"><img id="cross" src="style/img/cross.png" alt="close the list tab"></a>
+                    <a href="tokyo_met.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>
+        
+                <div class="list" id="p1d3to">
+                    <h2>Tochigi</h2>
+                    <p>Dishes...</p>
+                    <a href="#" onclick="javascript:hideDishes(this)"><img id="cross" src="style/img/cross.png" alt="close the list tab"></a>
+                    <a href="tochigi.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>
+        
+                <div class="list" id="p1d3sh">
+                    <h2>Shizuoka</h2>
+                    <p>Dishes...</p>
+                    <a href="#" onclick="javascript:hideDishes(this)"><img id="cross" src="style/img/cross.png" alt="close the list tab"></a>
+                    <a href="shizuoka.html"><img id="icon" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>
+        
+                <div class="list" id="p1d3ho">
+                    <h2>Hokkaido</h2>
+                    <p>Dishes...</p>
+                    <a href="#" onclick="javascript:hideDishes(this)"><img id="cross" src="style/img/cross.png" alt="close the list tab"></a>
+                    <a href="hokkaido.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>
+        
+                <div class="list" id="p1d3na">
+                    <h2>Nagasaki</h2>
+                    <p>Dishes...</p>
+                    <a href="#" onclick="javascript:hideDishes(this)"><img id="cross" src="style/img/cross.png" alt="close the list tab"></a>
+                    <a href="nagasaki.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>
+        
+                <div class="list" id="p1d3ky">
+                    <h2>Kyoto</h2>
+                    <p>Dishes...</p>
+                    <a href="#" onclick="javascript:hideDishes(this)"><img id="cross" src="style/img/cross.png" alt="close the list tab"></a>
+                    <a href="kyoto.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>
+        
+                <div class="list" id="p1d3ka">
+                    <h2>Kagawa</h2>
+                    <p>Dishes...</p>
+                    <a href="#" onclick="javascript:hideDishes(this)"><img id="cross" src="style/img/cross.png" alt="close the list tab"></a>
+                    <a href="kagawa.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>
+        
+                <div class="list" id="p1d3natFR">
+                    <h2>Plats Nationaux</h2>
+                    <p><img id="dish" class="dishes" src="style/img/dish.png" alt="small floating dish icon">Plats...</p>
+                    <a href="nat.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>
+        
+                <div class="list" id="p1d3natEN">
+                    <h2>National Dishes</h2>
+                    <p>Dishes...</p>
+                    <a href="nat.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>
+        
+                <!--<div class="list" id="p1d3natDE">
+                    <h2>National Gerichte</h2>
+                    <p>Gerichte...</p>
+                    <a href="nat.html"><img id="more" src="style/img/more.png" alt="get more info on the dishes"></a>
+                </div>-->
+            </div> 
 
 			<footer>
-                <p>Copyright</p>
-                <p>Créé par...</p>
-                <p>Contact</p>
-                <p>FR</p> <p>EN</p> <p>DE</p>
+                <p>Copyright &copy; 2019</p>
+                <p id="creFR">Créé par...</p>
+                <p id="creEN">Created by...</p>
+                <!--<p id="creDE">Erstellt von...</p>-->
+                <p id="conFR">Contact</p>
+                <p id="conEN">Contact</p>
+                <!--<p id="conDE">Kontakt</p>-->
+                <p id="transFR"><a class="translation" href="#" onclick="translate1('FR')" alt="translate to French">FR</a></p>
+                <p id="transEN"><a class="translation" href="#" onclick="translate1('EN')" alt="translate to English">EN</a></p>
+                <!--<p id="transDE"><a class="translation" href="#" onclick="translate1('DE')" alt="translate to German">DE</a></p>-->
 			</footer>
         
 	</body>
